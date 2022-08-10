@@ -51,8 +51,8 @@ void InsertAtPos(Node *&head,Node *&tail,int d,int pos){
         return ;
     }
     Node *newNode=new Node(d);
-    newNode->next=head->next;
-    head->next=newNode;
+    newNode->next=temp->next;
+    temp->next=newNode;
     // newnode ka next /* ko point kara rhe hai to hum head ka next me equal kara denge */
 }
 
